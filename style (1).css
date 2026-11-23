@@ -1,0 +1,76 @@
+/* Readable text: 16px or larger, contrast of at least 4.5:1 */
+body {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background: #121212;
+  color: #e8e8e8;
+  margin: 0;
+}
+
+/* Menu: no bullets, items in a row, padding, hover colour */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background: #8b0000;
+}
+
+nav a {
+  display: block;
+  padding: 14px 22px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #d4af37;
+  color: #121212;
+}
+
+/* Layout */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1, h2, caption, a {
+  color: #d4af37;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #d4af37;
+}
+
+/* Tables: border-collapse, borders and padding on th and td */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+caption {
+  font-weight: bold;
+  padding: 8px;
+}
+
+th, td {
+  border: 1px solid #888888;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Distinct header row */
+thead th {
+  background: #8b0000;
+  color: #ffffff;
+}
+
+/* Zebra rows (encouraged) */
+tbody tr:nth-child(even) {
+  background: #222222;
+}
